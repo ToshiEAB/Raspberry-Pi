@@ -1,0 +1,45 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# This shell script program was obtained online at
+# http:/%E4%BF%BA%E3%81%AE%E6%8A%80%E8%A1%93%E3%83%A1%E3%83%A2.net/raspberry-pi2-vpnserver-part1/
+# Provides:       vpnserver
+# Required-Start: $local_fs $network
+# Required-Stop:  $local_fs $network
+# Default-Start:  2 3 4 5
+# Default-Stop:   0 1 6
+# Description:    SoftEther VPN Server
+### END INIT INFO
+ 
+DAEMON=/usr/local/vpnserver/vpnserver
+LOCK=/var/lock/vpnserver
+ 
+vpn_start() {
+${DAEMON} start
+}
+ 
+vpn_stop() {
+${DAEMON} stop
+}
+ 
+test -x ${DAEMON} || exit 0
+ 
+case "$1" in
+start)
+vpn_start
+touch ${LOCK}
+;;
+stop)
+vpn_stop
+rm ${LOCK}
+;;
+restart)
+vpn_stop
+sleep 3
+vpn_start
+;;
+*)
+echo "Usage: $0 {start|stop|restart}"
+exit 1
+esac
+
+exit 0
