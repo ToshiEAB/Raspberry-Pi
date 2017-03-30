@@ -1,0 +1,20 @@
+Created: March 30, 2017
+
+
+<Files in C_Programs>
+1) Copy and paste on Raspberry Pi
+2) Open a C program on Geany IDE
+3) Add "-lm" to the Build option on Geany IDE for using mathematical functions
+4) Compile and build
+
+
+<Files in Main_Arduino_Program>
+1) Copy and paste on Raspberry Pi
+2) Open a .ino file on Arduino IDE
+3) Upload the file to a Main Arduino board
+
+
+<Files in Standalone Arduino Programs>
+1) Copy and paste on Windows
+2) Open a .ino file on Arduino IDE
+3) Upload the file to a standalone Arduino board
