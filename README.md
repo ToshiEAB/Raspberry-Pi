@@ -7,9 +7,8 @@ The codes herein are for the following article:
 
 in Kuroda, T. (2017). A combination of Raspberry Pi and SoftEther VPN for controlling research devices via the Internet. Journal of the Experimental Analysis of Behavior, 108, 468-484.
 
-/******************************************/
 
-Instructions
+A) Instructions
 
 <Files in C_Programs>
   
@@ -40,22 +39,19 @@ Instructions
 3) Upload the file to a standalone Arduino board
 
 
-/******************************************/
+B) Correction (Update on February 12, 2018)
+
 
 In Table 7, the commands are shown like,
 
-
-2) Change the permission setup of the files:
 
 cd ␣ /usr/local/vpnserverchmod ␣ 600 ␣ *chmod ␣ 700 ␣ vpncmd
 
 chmod ␣ 700 ␣ vpnserver
 
 
-The codes are supposed to be:
+The codes are supposed to look like:
 
-
-2) Change the permission setup of the files:
 
 cd ␣ /usr/local/vpnserver
 
@@ -69,4 +65,24 @@ chmod ␣ 700 ␣ vpnserver
 where ␣ indicates a space.
 
 
-(Updated on February 12, 2018)
+
+C) Extension
+
+The present method for setting up VPN works for Odroid XU4 (Hardkernel) with Ubutu 16.04 LTS installed as well with a couple minor changes.
+
+1. The way for setting a static local IP address on Ubuntu 16.04 differs from that on Raspbian. Type the following codes on Terminal and then look for online information on how to set a static IP addres on Ubuntu.
+
+sudo ␣ apt-get ␣ install ␣ leafpad
+
+sudo ␣ leafpad ␣ /etc/network/interface
+
+
+where ␣ indicates a space.
+
+2. There may be an error regarding the command "insserv" and, if this happens, type the following code on Terminal:
+
+sudo ␣ ln ␣ -s ␣ /usr/lib/insserv ␣ /sbin/insserv
+
+
+where ␣ indicates a space.
+
