@@ -66,7 +66,7 @@ where ␣ indicates a space.
 
 
 
-C) Extension
+C) Extension (Update on February 12, 2018)
 
 The present method for setting up VPN also works for Odroid XU4 (Hardkernel) with Ubutu 16.04 LTS installed with a couple minor changes.
 
