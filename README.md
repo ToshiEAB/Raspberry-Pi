@@ -14,16 +14,23 @@ in Kuroda, T. (2017). A combination of Raspberry Pi and SoftEther VPN for contro
 The command on Terminal is shown like,
 
 2) Change the permission setup of the files:
+
 cd ␣ /usr/local/vpnserverchmod ␣ 600 ␣ *chmod ␣ 700 ␣ vpncmd
+
 chmod ␣ 700 ␣ vpnserver
 
 The above is supposed to be:
 
 2) Change the permission setup of the files:
+
 cd ␣ /usr/local/vpnserver
+
 chmod ␣ 600 ␣ *
+
 chmod ␣ 700 ␣ vpncmd
+
 chmod ␣ 700 ␣ vpnserver
+
 
 where ␣ indicates a space.
 
