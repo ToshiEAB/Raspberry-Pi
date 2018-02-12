@@ -68,7 +68,7 @@ where ␣ indicates a space.
 
 C) Extension
 
-The present method for setting up VPN works for Odroid XU4 (Hardkernel) with Ubutu 16.04 LTS installed as well with a couple minor changes.
+The present method for setting up VPN also works for Odroid XU4 (Hardkernel) with Ubutu 16.04 LTS installed with a couple minor changes.
 
 1. The way for setting a static local IP address on Ubuntu 16.04 differs from that on Raspbian. Type the following codes on Terminal and then look for online information on how to set a static IP addres on Ubuntu.
 
