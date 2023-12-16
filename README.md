@@ -3,7 +3,7 @@ Created: March 30, 2017
 
 Last updated: February 12, 2018
 
-The codes herein are for the following article:
+# Source codes in this repo are for the following article:
 
 Kuroda, T. (2017). A combination of Raspberry Pi and SoftEther VPN for controlling research devices via the Internet. Journal of the Experimental Analysis of Behavior, 108, 468-484.
 
