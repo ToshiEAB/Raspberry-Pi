@@ -5,7 +5,7 @@ Last updated: February 12, 2018
 
 # Source codes herein are for the following article:
 
-Kuroda, T. (2017). A combination of Raspberry Pi and SoftEther VPN for controlling research devices via the Internet. Journal of the Experimental Analysis of Behavior, 108, 468-484.
+Kuroda, T. (2017). A combination of Raspberry Pi and SoftEther VPN for controlling research devices via the Internet. Journal of the Experimental Analysis of Behavior, 108, 468-484. https://doi.org/10.1002/jeab.289
 
 
 # A) Instructions
